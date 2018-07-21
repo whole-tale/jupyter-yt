@@ -1,4 +1,4 @@
-FROM jupyter/minimal-notebook:latest
+FROM jupyter/minimal-notebook:8d22c86ed4d7
 MAINTAINER Kacper Kowalik <xarthisius.kk@gmail.com>
 RUN conda install -q -y -c conda-forge yt scipy astropy pandas scikit-learn xlrd && conda clean -tipsy
 RUN ipython -c 'from matplotlib.font_manager import FontManager; FontManager()'
